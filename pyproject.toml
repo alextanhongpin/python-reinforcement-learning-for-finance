@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-reinforcement-learning-for-finance"
+version = "0.1.0"
+description = ""
+authors = ["alextanhongpin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.1.1"
+jupyterlab-code-formatter = "^3.0.2"
+black = "^24.10.0"
+isort = "^5.13.2"
+numpy = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
