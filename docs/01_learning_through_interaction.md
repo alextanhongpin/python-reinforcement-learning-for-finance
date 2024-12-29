@@ -5,6 +5,8 @@
 
 ```python
 import numpy as np
+
+rng = np.random.default_rng(seed=100)
 ```
 
 
@@ -37,7 +39,7 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(49.84)
+    np.float64(49.968)
 
 
 
@@ -54,7 +56,7 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(50.168)
+    np.float64(49.924)
 
 
 
@@ -92,7 +94,7 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(68.344)
+    np.float64(68.492)
 
 
 
