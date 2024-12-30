@@ -12,6 +12,7 @@ jupyterlab-code-formatter = "^3.0.2"
 black = "^24.10.0"
 isort = "^5.13.2"
 numpy = "^2.2.1"
+gymnasium = "^1.0.0"
 
 
 [build-system]
