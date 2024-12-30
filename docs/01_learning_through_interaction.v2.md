@@ -161,13 +161,13 @@ If we already know the coin is biased, we can simply choose head 100% of the tim
 # The probability of the outcome 4 is 5 times as likely as other number.
 state_space = [1, 2, 3, 4, 4, 4, 4, 4, 5, 6]
 action_space = [1, 2, 3, 4, 5, 6]
-action_weights = [1, 1, 1, 1, 1, 1]
+action_weights = [1/6 for i in range(6)]
 
 
 def epoch():
     total = 0
     for _ in range(600):
-        action = np.random.choice(action_space)
+        action = np.random.choice(action_space, p=action_weights)
         state = np.random.choice(state_space)
         if action == state:
             total += 1
@@ -180,7 +180,7 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(99.8)
+    np.float64(100.236)
 
 
 
@@ -228,7 +228,7 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(99.8)
+    np.float64(180.4)
 
 
 
@@ -246,6 +246,6 @@ simulate(epoch, state_space, action_space)
 
 
 
-    np.float64(99.8)
+    np.float64(300.628)
 
 
